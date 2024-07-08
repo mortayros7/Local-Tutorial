@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="homeTeam">
+                <h3>HOME</h3>
+                <div class="pointDisplay" id="home-score"><span></span></div>
+                <button onclick="HaddOne()" class="points-btn">+1</button>
+                <button onclick="HaddTwo()" class="points-btn">+2</button>
+                <button onclick="HaddThree()" class="points-btn">+3</button>
+            </div>
+            
+            <div id="guestTeam">
+                <h3>GUEST</h3>
+                <div class="pointDisplay" id="guest-score"><span></span></div>
+                <button onclick="GaddOne()" class="points-btn">+1</button>
+                <button onclick="GaddTwo()" class="points-btn">+2</button>
+                <button onclick="GaddThree()" class="points-btn">+3</button>
+            </div>
+        </div>
+        <div>
+            <button onclick="newGame()" id="new-game-btn">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
